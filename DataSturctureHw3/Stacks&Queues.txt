@@ -1,0 +1,36 @@
+Pushing values in order: 15, 25, 35, 45, 55
+  push(15)  -> Position/Size = 1
+  push(25)  -> Position/Size = 2
+  push(35)  -> Position/Size = 3
+  push(45)  -> Position/Size = 4
+  push(55)  -> Position/Size = 5
+top of stack 
+peek() -> 55
+isEmpty() -> false
+
+Popping all values:
+  pop() -> 55
+  pop() -> 45
+  pop() -> 35
+  pop() -> 25
+  pop() -> 15
+peek() -> Stack is empty. Cannot peek.
+isEmpty() -> true
+Result: The LAST value pushed (55) was the FIRST popped -> LIFO
+
+Enqueueing values in order: 15, 25, 35, 45, 55
+  enqueue(15)  -> Position/Size = 1
+  enqueue(25)  -> Position/Size = 2
+  enqueue(35)  -> Position/Size = 3
+  enqueue(45)  -> Position/Size = 4
+  enqueue(55)  -> Position/Size = 5
+peek() -> 15
+isEmpty() -> false
+Dequeueing all values:
+  pop() -> 15
+  pop() -> 25
+  pop() -> 35
+  pop() -> 45
+  pop() -> 55
+isEmpty() -> true
+Result: The FIRST value enqueued (15) was the FIRST dequeued -> FIFO
